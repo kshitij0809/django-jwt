@@ -5,7 +5,7 @@ from django.contrib.auth.models import (
     AbstractBaseUser, PermissionsMixin, BaseUserManager
 )
 from django.db import transaction
- 
+
 
 
 class UserManager(BaseUserManager):
@@ -60,3 +60,14 @@ class User(AbstractBaseUser, PermissionsMixin):
     def save(self, *args, **kwargs):
         super(User, self).save(*args, **kwargs)
         return self
+
+# {
+# 	"email":"kshitijpratap@gmail.com",
+# 	"first_name":"kshitij",
+# 	"last_name":"pratap",
+# 	"is_active":"True",
+# 	"is_staff":"False",
+# 	"date_joined":"2018-05-22T11:45:24.974313Z"
+
+
+# }
